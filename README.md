@@ -23,4 +23,3 @@ API WhatsApp
 
 Status do projeto:
 Em desenvolvimento 🚧
-Funcionalidades básicas já operacionais na versão desktop.
