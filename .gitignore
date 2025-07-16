@@ -1,0 +1,5 @@
+*.exe
+.__history/
+.__recovery/
+.Android/
+.Win32/

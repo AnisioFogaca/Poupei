@@ -33,6 +33,18 @@ type
     Label2: TLabel;
     Edit1: TEdit;
     Edit2: TEdit;
+    Label3: TLabel;
+    Rectangle2: TRectangle;
+    Layout5: TLayout;
+    Image3: TImage;
+    Layout6: TLayout;
+    Rectangle4: TRectangle;
+    SpeedButton4: TSpeedButton;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Layout7: TLayout;
+    Label4: TLabel;
+    Label5: TLabel;
   private
     { Private declarations }
   public
