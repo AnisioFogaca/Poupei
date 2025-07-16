@@ -3,12 +3,12 @@ program ProjectPoupei;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  UnitMain in 'UnitMain.pas' {Form1};
+  UnitMain in 'UnitMain.pas' {FrmLogin};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmLogin, FrmLogin);
   Application.Run;
 end.

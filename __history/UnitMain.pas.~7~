@@ -1,0 +1,47 @@
+unit UnitMain;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Objects, FMX.Controls.Presentation, FMX.Layouts, FMX.TabControl;
+
+type
+  TFrmLogin = class(TForm)
+    TabControl: TTabControl;
+    TabInitial: TTabItem;
+    TabLogin: TTabItem;
+    TabNewProfile: TTabItem;
+    Layout1: TLayout;
+    Image1: TImage;
+    Label1: TLabel;
+    rectLogin: TRectangle;
+    SpeedButton1: TSpeedButton;
+    backgroundInitial: TRectangle;
+    Text: TLayout;
+    buttons: TLayout;
+    Rectangle1: TRectangle;
+    SpeedButton2: TSpeedButton;
+    backgroundLogin: TRectangle;
+    Layout2: TLayout;
+    Image2: TImage;
+    Layout3: TLayout;
+    Rectangle3: TRectangle;
+    SpeedButton3: TSpeedButton;
+    Layout4: TLayout;
+    Label2: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmLogin: TFrmLogin;
+
+implementation
+
+{$R *.fmx}
+
+end.
