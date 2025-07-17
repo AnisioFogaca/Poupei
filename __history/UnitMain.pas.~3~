@@ -47,11 +47,6 @@ type
     Label5: TLabel;
     Edit5: TEdit;
     Edit6: TEdit;
-    procedure btnAcessoLoginClick(Sender: TObject);
-    procedure SpeedButton2Click(Sender: TObject);
-    procedure Label3Click(Sender: TObject);
-    procedure Label5Click(Sender: TObject);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -64,30 +59,5 @@ var
 implementation
 
 {$R *.fmx}
-
-procedure TFrmLogin.btnAcessoLoginClick(Sender: TObject);
-begin
-  tabcontrol.GotoVisibleTab(1);
-end;
-
-procedure TFrmLogin.FormShow(Sender: TObject);
-begin
-  tabcontrol.ActiveTab := tabInitial;
-end;
-
-procedure TFrmLogin.Label3Click(Sender: TObject);
-begin
-  tabcontrol.GotoVisibleTab(2);
-end;
-
-procedure TFrmLogin.Label5Click(Sender: TObject);
-begin
-  tabcontrol.GotoVisibleTab(1);
-end;
-
-procedure TFrmLogin.SpeedButton2Click(Sender: TObject);
-begin
-  tabcontrol.GotoVisibleTab(2);
-end;
 
 end.

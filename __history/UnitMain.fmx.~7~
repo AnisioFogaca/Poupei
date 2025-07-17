@@ -2,7 +2,7 @@ object FrmLogin: TFrmLogin
   Left = 0
   Top = 0
   Caption = 'PoupaAe'
-  ClientHeight = 775
+  ClientHeight = 726
   ClientWidth = 521
   Fill.Color = claAzure
   Fill.Kind = Solid
@@ -14,12 +14,12 @@ object FrmLogin: TFrmLogin
   object TabControl: TTabControl
     Align = Client
     Size.Width = 521.000000000000000000
-    Size.Height = 775.000000000000000000
+    Size.Height = 726.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 2
+    TabIndex = 0
     TabOrder = 1
-    TabPosition = PlatformDefault
+    TabPosition = None
     Sizes = (
       521s
       726s
@@ -32,13 +32,13 @@ object FrmLogin: TFrmLogin
         item
         end>
       TextSettings.Trimming = None
-      IsSelected = False
-      Size.Width = 173.000000000000000000
-      Size.Height = 49.000000000000000000
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
-      Text = 'TabInitial'
+      Text = 'S'
       ExplicitSize.cx = 67.000000000000000000
       ExplicitSize.cy = 26.000000000000000000
       object backgroundInitial: TRectangle
@@ -11845,7 +11845,7 @@ object FrmLogin: TFrmLogin
               end>
             Align = Top
             Size.Width = 379.000000000000000000
-            Size.Height = 210.000000000000000000
+            Size.Height = 153.000000000000000000
             Size.PlatformDefault = False
           end
           object buttons: TLayout
@@ -11866,7 +11866,7 @@ object FrmLogin: TFrmLogin
               Stroke.Kind = None
               XRadius = 8.000000000000000000
               YRadius = 8.000000000000000000
-              object SpeedButton1: TSpeedButton
+              object btnAcessoLogin: TSpeedButton
                 Align = Client
                 StyledSettings = [Family]
                 Size.Width = 355.000000000000000000
@@ -11877,6 +11877,7 @@ object FrmLogin: TFrmLogin
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = claWhitesmoke
                 TextSettings.Trimming = None
+                OnClick = btnAcessoLoginClick
               end
             end
             object Rectangle1: TRectangle
@@ -11934,8 +11935,8 @@ object FrmLogin: TFrmLogin
         end>
       TextSettings.Trimming = None
       IsSelected = False
-      Size.Width = 173.000000000000000000
-      Size.Height = 49.000000000000000000
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
@@ -23852,9 +23853,9 @@ object FrmLogin: TFrmLogin
         item
         end>
       TextSettings.Trimming = None
-      IsSelected = True
-      Size.Width = 175.000000000000000000
-      Size.Height = 49.000000000000000000
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
@@ -35666,13 +35667,13 @@ object FrmLogin: TFrmLogin
               end>
             Align = Top
             Size.Width = 379.000000000000000000
-            Size.Height = 210.000000000000000000
+            Size.Height = 145.000000000000000000
             Size.PlatformDefault = False
           end
           object Layout6: TLayout
-            Position.Y = 360.000000000000000000
+            Position.Y = 280.000000000000000000
             Size.Width = 379.000000000000000000
-            Size.Height = 226.000000000000000000
+            Size.Height = 290.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 2
             object Rectangle4: TRectangle
@@ -35681,7 +35682,7 @@ object FrmLogin: TFrmLogin
               Margins.Left = 16.000000000000000000
               Margins.Right = 16.000000000000000000
               Position.X = 16.000000000000000000
-              Position.Y = 167.000000000000000000
+              Position.Y = 231.000000000000000000
               Size.Width = 347.000000000000000000
               Size.Height = 59.000000000000000000
               Size.PlatformDefault = False
@@ -35703,14 +35704,14 @@ object FrmLogin: TFrmLogin
             end
             object Edit3: TEdit
               Touch.InteractiveGestures = [LongTap, DoubleTap]
-              TabOrder = 1
+              TabOrder = 3
               TextSettings.Font.Size = 18.000000000000000000
               Position.X = 32.000000000000000000
-              Position.Y = 40.000000000000000000
+              Position.Y = 120.000000000000000000
               Size.Width = 313.000000000000000000
               Size.Height = 32.000000000000000000
               Size.PlatformDefault = False
-              TextPrompt = 'Email'
+              TextPrompt = 'Informe uma senha'
               StyledSettings = [Family, Style, FontColor]
             end
             object Edit4: TEdit
@@ -35719,16 +35720,40 @@ object FrmLogin: TFrmLogin
               Password = True
               TextSettings.Font.Size = 18.000000000000000000
               Position.X = 32.000000000000000000
-              Position.Y = 96.000000000000000000
+              Position.Y = 168.000000000000000000
               Size.Width = 313.000000000000000000
               Size.Height = 32.000000000000000000
               Size.PlatformDefault = False
-              TextPrompt = 'Senha'
+              TextPrompt = 'Confirme sua senha'
+              StyledSettings = [Family, Style, FontColor]
+            end
+            object Edit5: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 2
+              TextSettings.Font.Size = 18.000000000000000000
+              Position.X = 32.000000000000000000
+              Position.Y = 8.000000000000000000
+              Size.Width = 313.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Nome completo'
+              StyledSettings = [Family, Style, FontColor]
+            end
+            object Edit6: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              TextSettings.Font.Size = 18.000000000000000000
+              Position.X = 32.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 313.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Email'
               StyledSettings = [Family, Style, FontColor]
             end
           end
           object Layout7: TLayout
-            Position.Y = 209.000000000000000000
+            Position.Y = 129.000000000000000000
             Size.Width = 379.000000000000000000
             Size.Height = 151.000000000000000000
             Size.PlatformDefault = False
@@ -35742,7 +35767,7 @@ object FrmLogin: TFrmLogin
               TextSettings.Font.Size = 36.000000000000000000
               TextSettings.Font.StyleExt = {00060000000000000004000000}
               TextSettings.HorzAlign = Center
-              Text = 'Acesse sua conta'
+              Text = 'Criar nova conta.'
               TabOrder = 0
             end
           end

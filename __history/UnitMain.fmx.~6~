@@ -10,7 +10,6 @@ object FrmLogin: TFrmLogin
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnShow = FormShow
   DesignerMasterStyle = 3
   object TabControl: TTabControl
     Align = Client
@@ -18,7 +17,7 @@ object FrmLogin: TFrmLogin
     Size.Height = 726.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 2
+    TabIndex = 0
     TabOrder = 1
     TabPosition = None
     Sizes = (
@@ -33,7 +32,7 @@ object FrmLogin: TFrmLogin
         item
         end>
       TextSettings.Trimming = None
-      IsSelected = False
+      IsSelected = True
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -11878,7 +11877,6 @@ object FrmLogin: TFrmLogin
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = claWhitesmoke
                 TextSettings.Trimming = None
-                OnClick = btnAcessoLoginClick
               end
             end
             object Rectangle1: TRectangle
@@ -11906,7 +11904,6 @@ object FrmLogin: TFrmLogin
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = xFFFF6F61
                 TextSettings.Trimming = None
-                OnClick = SpeedButton2Click
               end
             end
           end
@@ -23847,7 +23844,6 @@ object FrmLogin: TFrmLogin
           TextSettings.HorzAlign = Center
           Text = 'N'#227'o tenho uma conta. Criar conta agora'
           TabOrder = 0
-          OnClick = Label3Click
         end
       end
     end
@@ -23856,7 +23852,7 @@ object FrmLogin: TFrmLogin
         item
         end>
       TextSettings.Trimming = None
-      IsSelected = True
+      IsSelected = False
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -35791,7 +35787,6 @@ object FrmLogin: TFrmLogin
           TextSettings.HorzAlign = Center
           Text = 'J'#225' tenho uma conta.'
           TabOrder = 0
-          OnClick = Label5Click
         end
       end
     end
