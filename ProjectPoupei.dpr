@@ -3,7 +3,8 @@ program ProjectPoupei;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  UnitMain in 'UnitMain.pas' {FrmLogin};
+  UnitMain in 'UnitMain.pas' {FrmLogin},
+  UnitApp in 'UnitApp.pas' {FrmApp};
 
 {$R *.res}
 
