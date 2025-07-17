@@ -17,7 +17,7 @@ type
     Image1: TImage;
     Label1: TLabel;
     rectLogin: TRectangle;
-    SpeedButton1: TSpeedButton;
+    btnAcessoLogin: TSpeedButton;
     backgroundInitial: TRectangle;
     Text: TLayout;
     buttons: TLayout;
@@ -32,6 +32,25 @@ type
     Layout4: TLayout;
     Label2: TLabel;
     Edit1: TEdit;
+    Edit2: TEdit;
+    Label3: TLabel;
+    Rectangle2: TRectangle;
+    Layout5: TLayout;
+    Image3: TImage;
+    Layout6: TLayout;
+    Rectangle4: TRectangle;
+    SpeedButton4: TSpeedButton;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Layout7: TLayout;
+    Label4: TLabel;
+    Label5: TLabel;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    procedure btnAcessoLoginClick(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure Label3Click(Sender: TObject);
+    procedure Label5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -44,5 +63,25 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure TFrmLogin.btnAcessoLoginClick(Sender: TObject);
+begin
+  tabcontrol.GotoVisibleTab(1);
+end;
+
+procedure TFrmLogin.Label3Click(Sender: TObject);
+begin
+  tabcontrol.GotoVisibleTab(2);
+end;
+
+procedure TFrmLogin.Label5Click(Sender: TObject);
+begin
+  tabcontrol.GotoVisibleTab(1);
+end;
+
+procedure TFrmLogin.SpeedButton2Click(Sender: TObject);
+begin
+  tabcontrol.GotoVisibleTab(2);
+end;
 
 end.

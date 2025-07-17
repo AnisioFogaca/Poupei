@@ -4,10 +4,47 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs;
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Objects, FMX.Controls.Presentation, FMX.Layouts, FMX.TabControl, FMX.Edit;
 
 type
-  TForm1 = class(TForm)
+  TFrmLogin = class(TForm)
+    TabControl: TTabControl;
+    TabInitial: TTabItem;
+    TabLogin: TTabItem;
+    TabNewProfile: TTabItem;
+    Layout1: TLayout;
+    Image1: TImage;
+    Label1: TLabel;
+    rectLogin: TRectangle;
+    SpeedButton1: TSpeedButton;
+    backgroundInitial: TRectangle;
+    Text: TLayout;
+    buttons: TLayout;
+    Rectangle1: TRectangle;
+    SpeedButton2: TSpeedButton;
+    backgroundLogin: TRectangle;
+    Layout2: TLayout;
+    Image2: TImage;
+    Layout3: TLayout;
+    Rectangle3: TRectangle;
+    SpeedButton3: TSpeedButton;
+    Layout4: TLayout;
+    Label2: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Label3: TLabel;
+    Rectangle2: TRectangle;
+    Layout5: TLayout;
+    Image3: TImage;
+    Layout6: TLayout;
+    Rectangle4: TRectangle;
+    SpeedButton4: TSpeedButton;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Layout7: TLayout;
+    Label4: TLabel;
+    Label5: TLabel;
   private
     { Private declarations }
   public
@@ -15,7 +52,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FrmLogin: TFrmLogin;
 
 implementation
 
